@@ -12,22 +12,22 @@ Các ảnh dưới đây là kết quả test bằng **Postman**.
 ##  Kết quả test
 
 ### 1. Basic Auth
-![Basic Auth](basic_auth.png)
+![Basic Auth](result_test_img/basic_auth.png)
 
 ---
 
 ### 2. Cookie Auth
 #### a. Login
-![Login](login.png)
+![Login](result_test_img/login.png)
 
 #### b. Show Cookie trong MongoDB
-![Show Cookie](show_cookie.png)
+![Show Cookie](result_test_img/show_cookie.png)
 
 #### c. Logout
-![Logout](logout.png)
+![Logout](result_test_img/logout.png)
 
 #### d. Kiểm tra Cookie sau khi Logout
-![Show Cookie After Logout](show_cookie_afterlogout.png)
+![Show Cookie After Logout](result_test_img/show_cookie_afterlogout.png)
 
 ---
 
