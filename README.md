@@ -1,17 +1,36 @@
-#  Simple Authentication 
+#  Simple Authentication (Basic & Cookie Auth)
 
-## Giới thiệu
-Dự án này là một phần trong bài lab **Security in Node.js**.  
-Repository `simple_auth` minh họa 2 cơ chế xác thực cơ bản:
-1. **Basic Authentication** – kiểm tra thông tin đăng nhập thông qua header `Authorization`.
-2. **Cookie Authentication** – tạo và quản lý cookie sau khi đăng nhập, đồng thời lưu thông tin trong MongoDB.
+##  Giới thiệu
+Repo này minh họa hai cơ chế xác thực cơ bản trong Node.js:  
+1. **Basic Authentication**  
+2. **Cookie Authentication**
 
-## Chức năng chính
-- **Basic Auth**
-  - Người dùng gửi request với header `Authorization: Basic <username:password>` để truy cập tài nguyên.
-- **Cookie Auth**
-  - Người dùng đăng nhập → server tạo cookie.
-  - Cookie được lưu trong MongoDB.
-  - Người dùng có thể kiểm tra cookie khi gọi các API khác.
-  - Khi logout, cookie sẽ bị xóa khỏi DB.
+Các ảnh dưới đây là kết quả test bằng **Postman**.
 
+---
+
+##  Kết quả test
+
+### 1. Basic Auth
+![Basic Auth](basic_auth.png)
+
+---
+
+### 2. Cookie Auth
+#### a. Login
+![Login](login.png)
+
+#### b. Show Cookie trong MongoDB
+![Show Cookie](show_cookie.png)
+
+#### c. Logout
+![Logout](logout.png)
+
+#### d. Kiểm tra Cookie sau khi Logout
+![Show Cookie After Logout](show_cookie_afterlogout.png)
+
+---
+
+## ✅ Kết luận
+- Basic Auth: yêu cầu gửi đúng thông tin trong header `Authorization`.  
+- Cookie Auth: đăng nhập thành công sẽ tạo cookie, lưu vào MongoDB, và bị xóa sau khi logout.  
